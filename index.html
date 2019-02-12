@@ -3,13 +3,18 @@
     <title>Stephen Webpage</title>
     <link href="stylesheet.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   </head>
 
   <body>
     <header>
       <div class="container">
         <div id= "title">
-          <h1>Who am I?</h1>
+          <h1>Never Settle for Less</h1>
         </div>
         <nav>
           <ul>
@@ -21,16 +26,70 @@
         </nav>
     </header>
 
-    <div class = "row">
-      <img class = "column" src = "webpage1.jpg">
-      <div class = "column">
-        <h1>Stephen Thompson</h1>
-        <p>add info about me</p>
-        <!--button will move to next picture and info-->
-        <a id= button1 href="#" class="next round">&#8250;</a>
-        <!-- <img  -->
+
+
+
+
+    <div class = "container">
+      <div class="row">
+        <img class = "col-md-7" src = "webpage1.jpg">
+          <div class = "col-md-5">
+            <div id= "my-slider" class = "carousel slide" data-ride = "carousel">
+                <!--indactors-->
+              <ol class = "carousel-indactors">
+                <li data-target= "#my-slider" data-slide-to="0" class = "active"></li>
+                <li data-target= "#my-slider" data-slide-to="1"></li>
+              </ol>
+
+              <!--wrapper for slides-->
+              <div class "carousel-inner" role="listbox">
+                  <div class = "item active">
+                    <img id = "slider" src = "background.jpg">
+                    <div class="carousel-caption">
+                      <h1>Who am I?</h1>
+                      <p>add info about me</p>
+                    </div>
+                  </div>
+                  <div class = "item">
+                    <img id = "slider" src = "background.jpg">
+                    <div class="carousel-caption">
+                      <h1>What I love to do</h1>
+                      <p>add info about me</p>
+                    </div>
+                  </div>
+              </div>
+
+              <!--button will move to next picture and info-->
+              <a class = "left carousel-control" href="#my-slider" role = "button" data-slide = "prev">
+                <span class = "glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              </a>
+              <a class = "right carousel-control" href="#my-slider" role = "button" data-slide = "next">
+                <span class = "glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              </a>
+          </div>
+        </div>
       </div>
     </div>
+
+
+      <footer>
+        <div class = container-fluid>
+          <div class = "media">
+            <ul>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-linkedin"></i></li>
+              <li><i class="fab fa-github"></i></li>
+              <li><i class="fab fa-twitter-square"></i></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+
+
+
+
+
 
 
 
