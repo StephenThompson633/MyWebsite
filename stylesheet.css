@@ -38,9 +38,10 @@ header li{
   float: none;
   display: inline;
   text-align:center;
-  margin-left: 180px;
+  margin-left: 220px;
   padding:0 10px 0 10px;
 }
+
 footer .container-fluid{
   width: 100%;
   margin:auto;
@@ -51,27 +52,36 @@ footer{
   background: #999999;
   min-height: 70px;
 }
-img {
-  width: 100%;
+.bg-1 img {
+  width: 30%;
 }
 
 footer ul {
-  list-style-type: none;
-  margin: 0px auto;
-  margin-top: 20px;
-  padding: 0;
-  overflow: hidden;
+    list-style-type: none;
+    margin: 0px auto;
+    margin-top: 20px;
+    padding: 0;
+    overflow: hidden;
 }
 
 footer li {
-  float: left;
+    float: left;
 }
 
 footer li a {
-  display: block;
-  color: white;
-  text-align: center;
-  margin-left: 40px;
-  padding:0;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    margin-left: 40px;
+    padding:0;
+    text-decoration: none;
+}
+
+.slide{
+  margin:auto;
+}
+
+.carousel-inner img{
+  margin: auto;
+  width: 100%;
 }
